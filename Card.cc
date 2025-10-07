@@ -4,6 +4,7 @@ std::string Card::ToString()
 {
 	return std::format("{} of {}", ValueToString(_value), HandToString(_hand));
 }
+
 std::string HandToString(Hand _hand)
 {
 	switch (_hand)

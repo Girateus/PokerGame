@@ -17,7 +17,9 @@ void Deck::Fill()
 		}
 	}
 
-	std::ranges::shuffle(cards_, std::default_random_engine{});
+	//melange des cartes
+	std::default_random_engine engine(time(nullptr));
+	std::ranges::shuffle(cards_, engine);
 	std::ranges::for_each(cards_, [](Card c) {std::cout << c.ToString() << "\n";});
 }
 

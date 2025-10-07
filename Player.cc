@@ -6,6 +6,7 @@ void Player::SetHand(std::array<Card, 5> cards)
 
 std::string Player::Display()
 {
+	//ajoute des cartes jusqua 5
 	std::string result;
 	for (int i = 0; i < hand_cards_.size(); i++)
 	{

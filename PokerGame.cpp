@@ -2,6 +2,7 @@
 #include <iostream>
 #include "Card.hpp"
 #include "Player.hpp"
+#include "CheckHand.hpp"
 #include "Deck.hpp"
 #include <string>
 
@@ -33,6 +34,8 @@ int main()
 	}
 	player1.SetHand(hand1);
 
+	PokerHand player1Hand = EvaluateHand(hand1);
+
 	// Donner 5 cartes au joueur 2
 	std::array<Card, 5> hand2;
 	for (int i = 0; i < 5; i++)
@@ -43,6 +46,7 @@ int main()
 
 	// Affichage
 	std::cout << std::format("Player 1 [{}]\n", player1.Display());
+	std::cout << "Combinaison : " << PokerHandToString(player1Hand) << "\n";
 	std::cout << std::format("Player 2 [{}]\n", player2.Display());
 }
 

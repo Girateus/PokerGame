@@ -129,12 +129,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Card.cc" />
+    <ClCompile Include="CheckHand.cc" />
     <ClCompile Include="Deck.cc" />
     <ClCompile Include="Player.cc" />
     <ClCompile Include="PokerGame.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.hpp" />
+    <ClInclude Include="CheckHand.hpp" />
     <ClInclude Include="Deck.hpp" />
     <ClInclude Include="Player.hpp" />
   </ItemGroup>

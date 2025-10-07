@@ -28,23 +28,25 @@ enum Value : uint8_t
 	ace,
 };
 
-//enum HandValue
-//{
-//	high_card = 1,
-//	pair,
-//	two_pair,
-//	three_of_a_kind,
-//	straight,
-//	flush,
-//	full_house,
-//	straight_flush,
-//	royal_fulsh,
-//};
+enum PokerHand
+{
+	HighCard = 1,
+	Pair,
+	TwoPairs,
+	ThreeOfAKind,
+	Straight,
+	Flush,
+	FullHouse,
+	FourOfAKind,
+	StraightFlush,
+	RoyalFulsh,
+};
 
 struct Card
 {
 	Hand _hand;
 	Value _value;
+	PokerHand _pokerHand;
 	std::string ToString();
 		
 
@@ -52,3 +54,4 @@ struct Card
 
 std::string HandToString(Hand _hand);
 std::string ValueToString(Value _value);
+std::string PokerHandToString(PokerHand _pokerHand);
