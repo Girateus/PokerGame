@@ -20,7 +20,7 @@ void Deck::Fill()
 	//Shuffle the deck
 	std::default_random_engine engine(time(nullptr));
 	std::ranges::shuffle(cards_, engine);
-	std::ranges::for_each(cards_, [](Card c) {std::cout << c.ToString() << "\n";});
+	//std::ranges::for_each(cards_, [](Card c) {std::cout << c.ToString() << "\n";});
 }
 
 Card Deck::Draw()
