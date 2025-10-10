@@ -64,7 +64,7 @@ PokerHand EvaluateHand(const std::array<Card, 5>& hand)
 		}
 	}
 
-	//check if straight with an ace is possible
+	//check if straight with an ace at the start is possible
 	bool aceStraight = false;
 	if (!straight && num == std::vector<int>{2, 3, 4, 5, 14})
 	{

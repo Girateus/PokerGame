@@ -4,6 +4,7 @@
 class Player
 {
 public:
+	//set the number of card for each player
 		void SetHand(std::array<Card, 5>);
 
 		std::string Display();
