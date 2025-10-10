@@ -1,9 +1,9 @@
 #pragma once
 #include <string>
 #include <print>
-#include <cstdint>
 
-enum Hand : uint8_t
+
+enum Hand
 {
 	Club,
 	Hearts,
@@ -11,7 +11,7 @@ enum Hand : uint8_t
 	Diamonds
 };
 
-enum Value : uint8_t
+enum Value 
 {
 	two = 2,
 	three,
@@ -39,7 +39,7 @@ enum PokerHand
 	FullHouse,
 	FourOfAKind,
 	StraightFlush,
-	RoyalFulsh,
+	RoyalFlush,
 };
 
 struct Card
