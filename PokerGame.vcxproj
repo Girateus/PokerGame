@@ -132,7 +132,7 @@
     <ClCompile Include="CheckHand.cc" />
     <ClCompile Include="Deck.cc" />
     <ClCompile Include="Player.cc" />
-    <ClCompile Include="PokerGame.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Card.hpp" />
